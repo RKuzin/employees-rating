@@ -12,7 +12,15 @@ const mix = require('laravel-mix');
  */
 
 mix.js('resources/js/app.js', 'public/js')
+   .js('resources/js/employee-edit.js', 'public/js')
+   .js('resources/js/indicators.js', 'public/js')
+
    .sass('resources/sass/app.scss', 'public/css');
+
+mix.autoload({
+    jquery: ['$', 'window.jQuery', 'jQuery'],
+});
+
 
 if (mix.config.production) {
     mix.version();

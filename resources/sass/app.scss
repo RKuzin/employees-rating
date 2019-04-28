@@ -12,3 +12,25 @@
   background-color: #fff;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
 }
+
+.content{
+  &__heading{
+    text-align: center;
+  }
+}
+
+.employee-rating{
+  border: 1px solid black;
+  margin: 10px auto;
+  width: 80%;
+  &__header{
+    font-weight: bold;
+  }
+  &__header-cell{
+    border: 1px solid black;
+  }
+  &__cell{
+    border: 1px solid black;
+
+  }
+}

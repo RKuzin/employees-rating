@@ -10667,3 +10667,25 @@ a.text-dark:focus {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
 }
 
+.content__heading {
+  text-align: center;
+}
+
+.employee-rating {
+  border: 1px solid black;
+  margin: 10px auto;
+  width: 80%;
+}
+
+.employee-rating__header {
+  font-weight: bold;
+}
+
+.employee-rating__header-cell {
+  border: 1px solid black;
+}
+
+.employee-rating__cell {
+  border: 1px solid black;
+}
+
