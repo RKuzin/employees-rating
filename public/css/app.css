@@ -10689,3 +10689,8 @@ a.text-dark:focus {
   border: 1px solid black;
 }
 
+.employee-card__link {
+  margin-top: 20px;
+  display: block;
+}
+

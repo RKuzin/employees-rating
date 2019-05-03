@@ -85,6 +85,7 @@ class EmployeesController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function update(Request $request, $id) {
+        $time_start = microtime(true);
         $employee = Employee::find($id);
         $employee->full_name = $request->get('full-name-input');
         $employee->sex = $request->get('sex-select');
@@ -101,7 +102,9 @@ class EmployeesController extends Controller
         $employee->rating = $employee->indicators->sum('indicator_value');
         $success = $employee->save();
         if ($success) {
-            return Response::json(['Карточка работника успешно обновлена.'], 200);
+            $time_end = microtime(true);
+            $execution_time = ($time_end - $time_start);
+            return Response::json(["Карточка работника успешно обновлена за $execution_time сек."], 200);
         } else {
             return Response::json(['Карточку работника обновить не удалось.'], 422);
         }

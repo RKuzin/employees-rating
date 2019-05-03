@@ -22,7 +22,7 @@ $(document).ready(function () {
                 message += '</div>';
                 $(".indicators").find('.indicators__messages').html(message);
                 setTimeout(function(){
-                    window.location.reload();
+                //    window.location.reload();
                 }, 3000);
             },
             error: function (data) {

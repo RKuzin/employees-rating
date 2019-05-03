@@ -10715,8 +10715,7 @@ return jQuery;
         });
         message += '</div>';
         $('form[name="employeeUpdateForm"]').parent().find('.form-errors').html(message);
-        setTimeout(function () {
-          window.location.reload();
+        setTimeout(function () {//  window.location.reload();
         }, 3000);
       },
       error: function error(data) {

@@ -29,6 +29,8 @@
             {{Form::submit('Обновить',array('class' => 'employee-form__button btn btn-primary'))}}
             {{Form::close()}}
             {{-- Form Ends Here --}}
+            <a href="{{route('employee.index')}}" class="employee-card__link">Назад к списку сотрудников</a>
+            <a href="{{route('indicator.index')}}" class="employee-card__link">Список показателей</a>
         </div>
 
     </div>

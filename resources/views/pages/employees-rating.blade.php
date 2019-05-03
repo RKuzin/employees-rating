@@ -7,7 +7,6 @@
         <h3 class="content__heading">Рейтинг сотрудников</h3>
         @php
             $time_start = microtime(true);
-            $ratingPosition = 1;
         @endphp
             <table class="employee-rating content__table">
                 <thead class="employee-rating__header">

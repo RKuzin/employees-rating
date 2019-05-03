@@ -21,7 +21,7 @@ $(document).ready(function () {
                 message += '</div>';
                 $('form[name="employeeUpdateForm"]').parent().find('.form-errors').html(message);
                 setTimeout(function(){
-                    window.location.reload();
+                  //  window.location.reload();
                 }, 3000);
             },
             error: function (data) {
